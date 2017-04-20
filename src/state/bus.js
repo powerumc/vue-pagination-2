@@ -10,7 +10,7 @@ module.exports = function() {
   methods: {
     paginate: function(page) {
       this.page = page;
-      bus.$emit('vue-pagination::' + this.for, page);
+      this.$root.$emit('vue-pagination::' + this.for, page);
     }
   }
 }
